@@ -1,20 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: helvetica neue, arial;
   font-size: 18px;
 }
 
 h1, h2 {
-  color: green;
+  color: #069a11;
 }
 
 h1 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
-p {
+.main-text {
   text-align: justify;
+  margin-bottom: 20px;
+}
+
+#author-text {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.container {
+  width: 1140px;
+  margin: 20px auto 0px auto;
+}
+
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+
+.other-posts {
+  width: 25%;
+  float: left;
+}
+
+.author {
+  padding-top: 20px;
+  border-top: 2px solid #808080;
+}
+
+.author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
+}
+
+.skills-list img {
+  width: auto;
+  height: 80px;
+  margin: 20px;
+}
+
+.other {
+  margin-bottom: 40px;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
